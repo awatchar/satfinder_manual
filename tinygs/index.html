@@ -4,43 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TinyGS Dashboard (สำหรับครูผู้สอน)</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <main class="container py-4 pb-5">
-      <nav class="content-card mb-4 tinygs-nav" aria-label="TinyGS navigation">
-        <a href="../index.html">หน้าแรก</a>
-        <a href="index.html" class="active">TinyGS Dashboard</a>
-        <a href="what-is-tinygs.html">Intro</a>
-        <a href="access-login.html">Access/Login</a>
-        <a href="main-menus.html">Main Menus</a>
-        <a href="all-in-one.html">All-in-one</a>
-      </nav>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a class="brand" href="../index.html"><strong>SatFinder</strong><span>Telecom School Manual</span></a>
+        <nav>
+          <input id="menu-toggle" class="nav-toggle" type="checkbox" />
+          <label class="nav-toggle-label" for="menu-toggle">☰ เมนู</label>
+          <div class="nav-links">
+            <a href="../index.html">หน้าแรก</a>
+            <a class="active" href="index.html">TinyGS</a>
+            <a href="../index.html#stepbystep">คู่มือภาพแบบ Step-by-step</a>
+            <a href="../index.html#about">เกี่ยวกับโครงการ</a>
+            <a href="https://github.com/awatchar/satfinder_manual" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-      <section class="content-card">
-        <h1 class="h3">TinyGS Dashboard (สำหรับครูผู้สอน)</h1>
-        <p>
-          ชุดเอกสารนี้ปรับเป็นแบบหลายหน้าเพื่อให้ครูผู้สอนคลิกอ่านตามลำดับกิจกรรมได้ง่ายขึ้น:
-          <strong>Intro → Access/Login → Main Menus</strong>
-        </p>
-
-        <div class="list-group doc-links">
-          <a class="list-group-item list-group-item-action" href="what-is-tinygs.html">เริ่มที่หน้า Intro: TinyGS คืออะไร</a>
-          <a class="list-group-item list-group-item-action" href="access-login.html">ถัดไป: ขั้นตอนเข้าหน้าเว็บไซต์และลงชื่อเข้าใช้</a>
-          <a class="list-group-item list-group-item-action" href="main-menus.html">ต่อไป: คำอธิบายเมนูหลักที่ควรรู้</a>
+    <main class="container">
+      <div class="breadcrumb"><a href="../index.html">หน้าแรก</a> / TinyGS / TinyGS Dashboard (สำหรับครูผู้สอน)</div>
+      <section class="hero">
+        <div class="hero-card">
+          <h1>TinyGS Dashboard (สำหรับครูผู้สอน)</h1>
+          <p>คู่มือย่อยสำหรับครู เน้นการใช้งานจริงในห้องเรียน โดยเรียงลำดับจากภาพรวม → เข้าถึงระบบ → เข้าใจเมนูหลัก</p>
+          <div class="cta-row"><a class="btn primary" href="01-intro.html">เริ่มบทที่ 01</a></div>
         </div>
+      </section>
 
-        <figure class="mt-4 mb-0">
-          <div class="screenshot-placeholder">ภาพประกอบ: หน้า TinyGS Dashboard เบื้องต้น (จะเพิ่มภายหลัง)</div>
-          <figcaption class="small text-light-subtle mt-2">หมายเหตุ: จะเพิ่มภาพจริงภายหลังเมื่อได้รับไฟล์ Print Screen</figcaption>
+      <section class="section-box">
+        <h2>ครูจะได้เรียนรู้อะไร</h2>
+        <ul>
+          <li>บทบาทของ TinyGS ในการสอนด้านโทรคมนาคมและอวกาศ</li>
+          <li>วิธีเข้าหน้า Dashboard และแนวทางใช้งานแบบไม่ล็อกอิน/ล็อกอิน</li>
+          <li>ความหมายของเมนูหลักเพื่อออกแบบกิจกรรมในคาบเรียน</li>
+        </ul>
+      </section>
+
+      <section class="section-box">
+        <h2>เริ่มต้นใน 10 นาที (Quick Path)</h2>
+        <ol class="steps">
+          <li>อ่านบทที่ <strong>01 Intro</strong> เพื่อเข้าใจภาพรวม TinyGS</li>
+          <li>ไปบทที่ <strong>02 Access/Login</strong> เพื่อเตรียมการใช้งานหน้า Dashboard</li>
+          <li>ต่อบทที่ <strong>03 Main Menus</strong> เพื่อวางแผนการสอนและกิจกรรม</li>
+        </ol>
+      </section>
+
+      <section class="section-box">
+        <h2>สิ่งที่ต้องเตรียม</h2>
+        <ul>
+          <li>เว็บเบราว์เซอร์สมัยใหม่ (Chrome / Edge / Firefox)</li>
+          <li>อินเทอร์เน็ตที่เสถียรสำหรับเปิดหน้า Dashboard</li>
+        </ul>
+        <h2>สิ่งที่จะเพิ่มภายหลัง</h2>
+        <ul>
+          <li>ภาพหน้าจอจริงแต่ละขั้นตอน</li>
+          <li>ใบกิจกรรมและแบบฝึกสำหรับนักเรียน</li>
+        </ul>
+
+        <figure class="figure">
+          <div class="img-placeholder" role="img" aria-label="ภาพประกอบ: หน้า TinyGS Dashboard เบื้องต้น (จะเพิ่มภายหลัง)">
+            <div class="img-placeholder__title">SCREENSHOT PLACEHOLDER</div>
+            <div class="img-placeholder__desc">หน้า TinyGS Dashboard เบื้องต้นสำหรับการปฐมนิเทศครู</div>
+          </div>
+          <figcaption>ภาพประกอบ: หน้า TinyGS Dashboard เบื้องต้น (จะเพิ่มภายหลัง)</figcaption>
         </figure>
       </section>
+
+      <div class="bottom-nav"><a class="btn primary" href="01-intro.html">เริ่มบท 01: Intro →</a></div>
     </main>
+
+    <footer>
+      <div class="container">
+        <div>โครงการส่งเสริมการเรียนรู้ทางด้านโทรคมนาคมในโรงเรียนทั่วประเทศ (SatFinder)</div>
+        <div>คณะวิศวกรรมศาสตร์ มหาวิทยาลัยธรรมศาสตร์ และ สถาบันวิจัยและให้คำปรึกษาแห่งมหาวิทยาลัยธรรมศาสตร์</div>
+        <div>สนับสนุนโดย กองทุนวิจัยและพัฒนากิจการกระจายเสียง กิจการโทรทัศน์ และกิจการโทรคมนาคม เพื่อประโยชน์สาธารณะ</div>
+      </div>
+    </footer>
   </body>
 </html>
