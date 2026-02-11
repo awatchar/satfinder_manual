@@ -25,8 +25,7 @@
             <h1 class="display-5 fw-bold">คู่มือการใช้งาน TinyGS Dashboard สำหรับครูผู้สอน</h1>
             <p class="lead mt-3 mb-0">
               เอกสารประกอบการอบรมโครงการส่งเสริมการเรียนรู้ทางด้านโทรคมนาคมในโรงเรียนทั่วประเทศ
-              (SatFinder)
-              โดยคณะวิศวกรรมศาสตร์ มหาวิทยาลัยธรรมศาสตร์ และสถาบันวิจัยและให้คำปรึกษาแห่งมหาวิทยาลัยธรรมศาสตร์
+              (SatFinder) โดยคณะวิศวกรรมศาสตร์ มหาวิทยาลัยธรรมศาสตร์ และสถาบันวิจัยและให้คำปรึกษาแห่งมหาวิทยาลัยธรรมศาสตร์
               สนับสนุนโดย กสทช. เพื่อประโยชน์สาธารณะ
             </p>
           </div>
@@ -34,9 +33,9 @@
             <div class="glass-card p-4">
               <h2 class="h5">วัตถุประสงค์คู่มือ</h2>
               <ul class="mb-0 ps-3">
-                <li>ช่วยครูเข้าใจการใช้งาน TinyGS Dashboard อย่างเป็นลำดับ</li>
-                <li>เตรียมเนื้อหาสำหรับขยายผลให้กับนักเรียนที่โรงเรียน</li>
-                <li>ใช้ภาพหน้าจอจริงเพื่อให้สอนได้ง่ายและเห็นภาพชัดเจน</li>
+                <li>ช่วยครูเข้าใจ TinyGS Dashboard อย่างเป็นลำดับ</li>
+                <li>เตรียมเนื้อหาก่อนนำไปสอนขยายผลกับนักเรียน</li>
+                <li>ใช้ข้อมูลจริงเพื่อฝึกการคิดเชิงวิศวกรรมและการสื่อสาร</li>
               </ul>
             </div>
           </div>
@@ -47,51 +46,143 @@
     <main class="pb-5">
       <section class="container section-spacing">
         <div class="section-title-wrap">
-          <h2 class="section-title">แนวทางใช้งานคู่มือฉบับนี้</h2>
+          <h2 class="section-title">1) เนื้อหาพื้นฐานที่ครูควรรู้ก่อนใช้งาน TinyGS</h2>
         </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="feature-card h-100">
-              <h3 class="h5">1) อ่านภาพรวมก่อนสอน</h3>
-              <p class="mb-0">เริ่มจากเข้าใจโครงสร้างของ TinyGS Dashboard และเมนูหลักก่อนลงรายละเอียดแต่ละหน้า</p>
+
+        <article class="content-card mb-4">
+          <h3 class="h4">1.1 TinyGS คืออะไร และใช้ทำอะไรในงานการเรียนการสอน</h3>
+          <p>
+            TinyGS เป็นแพลตฟอร์มโอเพ่นซอร์สและชุมชนผู้ใช้งานทั่วโลกที่สนับสนุนการรับสัญญาณดาวเทียมขนาดเล็ก
+            (โดยเฉพาะกลุ่ม CubeSat และดาวเทียมการศึกษา) ผ่านเครือข่ายสถานีรับสัญญาณภาคพื้น (Ground Station)
+            แบบต้นทุนต่ำ โดยมี Dashboard เป็นศูนย์กลางสำหรับการสังเกตการณ์และวิเคราะห์ข้อมูล เช่น packets,
+            telemetry, satellite pass และข้อมูลการรับสัญญาณจากสถานีต่าง ๆ
+          </p>
+          <p>
+            ในมิติการเรียนการสอน TinyGS Dashboard เปรียบเสมือน “ห้องทดลองเสมือน” ที่ทำให้ครูและนักเรียนเรียนรู้
+            แนวคิดด้านโทรคมนาคมและอวกาศด้วยข้อมูลจริง (real-world data) ได้ตั้งแต่เริ่มต้น แม้ยังไม่มีอุปกรณ์ภาคสนามครบชุด
+          </p>
+
+          <div class="row g-3">
+            <div class="col-lg-4">
+              <div class="tier-card h-100">
+                <h4 class="h6">ระดับสังเกตการณ์ (Observation)</h4>
+                <ul class="mb-0 ps-3">
+                  <li>เรียนรู้ว่าดาวเทียมส่งข้อมูลอย่างไร และข้อมูลแสดงบน Dashboard แบบไหน</li>
+                  <li>เหมาะกับพื้นฐานคลื่นวิทยุ, ข้อมูลดิจิทัล, telemetry และเครือข่ายสถานีภาคพื้น</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="tier-card h-100">
+                <h4 class="h6">ระดับวิเคราะห์ข้อมูล (Data Interpretation)</h4>
+                <ul class="mb-0 ps-3">
+                  <li>วิเคราะห์ความถี่การรับแพ็กเก็ตและความสัมพันธ์กับช่วง pass</li>
+                  <li>เปรียบเทียบผลลัพธ์ระหว่างสถานี และฝึกมองคุณภาพสัญญาณ/packet loss</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="tier-card h-100">
+                <h4 class="h6">ระดับออกแบบการทดลอง (Experiment Design)</h4>
+                <ul class="mb-0 ps-3">
+                  <li>ตั้งสมมติฐาน เช่น max elevation สูงขึ้นจะรับได้มากขึ้นหรือไม่</li>
+                  <li>เชื่อมโยง STEM: สถิติพื้นฐาน, การคิดเชิงระบบ และการสื่อสารเชิงวิศวกรรม</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="feature-card h-100">
-              <h3 class="h5">2) ใช้ภาพหน้าจอประกอบ</h3>
-              <p class="mb-0">แต่ละหัวข้อมีตำแหน่งวางภาพ Print Screen เพื่อให้ผู้เรียนเชื่อมโยงกับหน้าจอจริงได้ทันที</p>
+
+          <p class="mb-0 mt-3">
+            <strong>ข้อดีเชิงการสอน:</strong> Dashboard ช่วยลดอุปสรรคการเริ่มต้น เพราะผู้เรียนเข้าถึงข้อมูลเพื่อฝึกตีความและตั้งคำถามทางวิศวกรรมได้
+            ก่อน เมื่อโรงเรียนพร้อมจึงค่อยต่อยอดสู่การติดตั้งสถานี TinyGS จริงและทำโครงงานแบบ project-based learning
+          </p>
+        </article>
+
+        <article class="content-card mb-4">
+          <h3 class="h4">1.2 ขั้นตอนเข้าหน้าเว็บไซต์และลงชื่อเข้าใช้</h3>
+          <p class="mb-3">
+            หมายเหตุ: หากจุดประสงค์คือ “สังเกตการณ์/วิเคราะห์ข้อมูล” โดยทั่วไปสามารถทำได้แม้ไม่ลงชื่อเข้าใช้
+            (ขึ้นกับนโยบายการเข้าถึงของ Dashboard ในเวลานั้น)
+          </p>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="instruction-card h-100">
+                <h4 class="h6">กรณี A: ดูและวิเคราะห์ข้อมูล (ไม่ต้องล็อกอิน)</h4>
+                <ol class="mb-0 ps-3">
+                  <li>เปิดเว็บเบราว์เซอร์ (แนะนำ Chrome/Edge รุ่นปัจจุบัน)</li>
+                  <li>เข้าสู่หน้า TinyGS Dashboard จากลิงก์ในคู่มือโครงการ SatFinder</li>
+                  <li>ตรวจสอบองค์ประกอบหลัก เช่น แผนที่, แถบเมนู, รายการข้อมูล</li>
+                  <li>เริ่มเลือกดาวเทียมหรือมุมมองข้อมูลที่ต้องการ</li>
+                </ol>
+                <p class="small mb-0 mt-2 text-light-subtle">
+                  ผลลัพธ์ที่คาดหวัง: ครูควรเห็นข้อมูลแบบสาธารณะอย่างน้อยระดับรายการดาวเทียม/สถิติพื้นฐาน
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="instruction-card h-100">
+                <h4 class="h6">กรณี B: ลงชื่อเข้าใช้ (เพื่อความสามารถเพิ่มเติม)</h4>
+                <ol class="mb-0 ps-3">
+                  <li>เข้าหน้า TinyGS Dashboard</li>
+                  <li>มองหาปุ่ม/เมนู Sign in, Login หรือ Account (มักอยู่มุมขวาบน)</li>
+                  <li>เลือกวิธีลงชื่อเข้าใช้ตามที่ระบบรองรับ</li>
+                  <li>ตรวจสอบชื่อผู้ใช้หรือเมนูที่เพิ่มขึ้นหลังล็อกอินสำเร็จ</li>
+                </ol>
+                <p class="small mb-0 mt-2 text-light-subtle">
+                  ใช้เมื่อต้องการตั้งค่าเฉพาะบัญชี จัดการสถานี หรือฟังก์ชันเฉพาะโรงเรียน
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="feature-card h-100">
-              <h3 class="h5">3) ดัดแปลงกิจกรรมได้</h3>
-              <p class="mb-0">สามารถปรับบทเรียนเป็นกิจกรรมในชั้นเรียน เช่น ฝึกอ่านข้อมูลดาวเทียมและสัญญาณจริง</p>
-            </div>
+
+          <div class="caution-card mt-3">
+            <h4 class="h6 mb-2">ข้อควรระวัง (Caution)</h4>
+            <ul class="mb-0 ps-3">
+              <li>ใช้รหัสผ่านไม่ซ้ำและไม่แชร์ในที่สาธารณะ</li>
+              <li>หลีกเลี่ยงการบันทึกรหัสผ่านบนเครื่องสาธารณะ</li>
+              <li>แยกบัญชีสาธิตในห้องเรียนออกจากบัญชีที่ใช้ตั้งค่าระบบจริง</li>
+            </ul>
           </div>
-        </div>
+        </article>
+
+        <article class="content-card">
+          <h3 class="h4">1.3 คำอธิบายเมนูหลักที่ควรรู้ก่อนเริ่มใช้งานจริง</h3>
+          <p>
+            ชื่อเมนูใน Dashboard อาจต่างกันเล็กน้อยตามรุ่น/การปรับ UI แต่แนวคิดหลักใกล้เคียงกัน
+            ด้านล่างคือกลุ่มเมนูสำคัญที่ครูควรเข้าใจเพื่อใช้สอนได้อย่างมั่นใจ
+          </p>
+          <div class="row g-3">
+            <div class="col-md-6 col-xl-4"><div class="menu-card h-100"><h4 class="h6">1) Satellite / Satellites</h4><p class="mb-0">ค้นหาและเลือกดาวเทียมที่ต้องการติดตาม ใช้ตั้งโจทย์ “เลือกดาวเทียม 1 ดวง” เป็นแกนกิจกรรมทั้งคาบ</p></div></div>
+            <div class="col-md-6 col-xl-4"><div class="menu-card h-100"><h4 class="h6">2) Pass / Passes / Next Pass</h4><p class="mb-0">ดูช่วงเวลาที่รับสัญญาณได้ พร้อมตัวชี้วัดเวลาเริ่ม-สิ้นสุดและมุมเงยสูงสุด เพื่อสอนเรื่องหน้าต่างเวลาสื่อสาร</p></div></div>
+            <div class="col-md-6 col-xl-4"><div class="menu-card h-100"><h4 class="h6">3) Telemetry / Packets / Frames</h4><p class="mb-0">หัวใจของการวิเคราะห์ข้อมูลจริง เช่น timestamp, source, payload ฝึกแยกความต่างระหว่าง “สัญญาณ” และ “ข้อมูล”</p></div></div>
+            <div class="col-md-6 col-xl-4"><div class="menu-card h-100"><h4 class="h6">4) Map / Stations / Nodes</h4><p class="mb-0">ดูการกระจายของสถานีภาคพื้นและสถานะเครือข่าย ใช้สอน distributed network ในระบบอวกาศ</p></div></div>
+            <div class="col-md-6 col-xl-4"><div class="menu-card h-100"><h4 class="h6">5) Statistics / Activity</h4><p class="mb-0">ใช้ดูจำนวนแพ็กเก็ตและแนวโน้มตามเวลา เพื่อต่อยอดกิจกรรมสถิติพื้นฐานและการทดสอบสมมติฐาน</p></div></div>
+            <div class="col-md-6 col-xl-4"><div class="menu-card h-100"><h4 class="h6">6) Search / Filter และ 7) Account / Settings</h4><p class="mb-0">ช่วยกรองข้อมูลไม่ให้ล้น และใช้การตั้งค่าเฉพาะเมื่อจำเป็น โดยกำหนดขอบเขตการปรับแต่งให้ชัดเจน</p></div></div>
+          </div>
+        </article>
       </section>
 
       <section class="container section-spacing">
         <div class="section-title-wrap">
-          <h2 class="section-title">โครงร่างเนื้อหาคู่มือ TinyGS Dashboard</h2>
-          <p class="mb-0 text-light-subtle">รองรับการเติมภาพหน้าจอจริงทีละส่วนเมื่อได้รับไฟล์จากทีมงาน</p>
+          <h2 class="section-title">2) โครงร่างหัวข้อสอน + จุดวางภาพหน้าจอ TinyGS</h2>
+          <p class="mb-0 text-light-subtle">รองรับการเติมภาพ Print Screen ทีละส่วนเมื่อได้รับไฟล์จากทีมงาน</p>
         </div>
 
         <div class="accordion accordion-space" id="manualSections">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sec1" aria-expanded="true" aria-controls="sec1">
-                ส่วนที่ 1: รู้จัก TinyGS Dashboard และการเข้าสู่ระบบ
+                ส่วนที่ 1: หน้าเริ่มต้นและภาพรวม Dashboard
               </button>
             </h2>
             <div id="sec1" class="accordion-collapse collapse show" data-bs-parent="#manualSections">
               <div class="accordion-body">
                 <ul>
-                  <li>แนะนำ TinyGS คืออะไร และใช้ทำอะไรในงานการเรียนการสอน</li>
-                  <li>ขั้นตอนเข้าหน้าเว็บไซต์และลงชื่อเข้าใช้</li>
-                  <li>คำอธิบายเมนูหลักที่ควรรู้ก่อนเริ่มใช้งานจริง</li>
+                  <li>โครงสร้างหน้าจอหลัก, แถบเมนู, และตำแหน่งข้อมูลสำคัญ</li>
+                  <li>แนวทางแนะนำผู้เรียนก่อนเริ่มกิจกรรมจริง</li>
                 </ul>
-                <div class="screenshot-placeholder">พื้นที่วางภาพ: หน้า Login / หน้าแรกหลังเข้าสู่ระบบ</div>
+                <div class="screenshot-placeholder">พื้นที่วางภาพ: หน้าแรกของ TinyGS Dashboard</div>
               </div>
             </div>
           </div>
@@ -99,37 +190,22 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sec2" aria-expanded="false" aria-controls="sec2">
-                ส่วนที่ 2: การดูสถานีรับสัญญาณและสถานะการทำงาน
+                ส่วนที่ 2: การค้นหา Station ของโรงเรียนจากเมนู Station
               </button>
             </h2>
             <div id="sec2" class="accordion-collapse collapse" data-bs-parent="#manualSections">
               <div class="accordion-body">
                 <ul>
-                  <li>อ่านข้อมูลสถานี (Ground Station) ที่เชื่อมต่อกับระบบ</li>
-                  <li>ค้นหา Station ของโรงเรียนจากเมนู <strong>Station</strong> ใน Hamburger Icon ได้อย่างรวดเร็ว</li>
-                  <li>ตรวจสอบสถานะออนไลน์, กราฟ และค่าพื้นฐานที่สำคัญ</li>
-                  <li>แนวทางตีความข้อมูลเพื่ออธิบายให้นักเรียนเข้าใจได้ง่าย</li>
+                  <li>คลิกเมนู Hamburger Icon (มุมซ้ายบน) แล้วเลือกเมนู <strong>Station</strong></li>
+                  <li>พิมพ์ในช่อง <strong>Find Station</strong> ตามรูปแบบ <code>SatFinder_จังหวัด_ชื่อย่อโรงเรียน</code></li>
+                  <li>เลือก Station ของโรงเรียนจากผลลัพธ์เพื่อดูสถานะและข้อมูลการรับสัญญาณ</li>
                 </ul>
-
-                <div class="instruction-card mt-3">
-                  <h3 class="h6 mb-2">วิธีค้นหา Station ของโรงเรียน</h3>
-                  <ol class="mb-2 ps-3">
-                    <li>คลิกเมนู <strong>Hamburger Icon</strong> มุมซ้ายบนของเว็บไซต์ <strong>www.tinygs.com</strong></li>
-                    <li>เลือกเมนู <strong>Station</strong></li>
-                    <li>
-                      พิมพ์ชื่อสถานีในช่อง <strong>Find Station</strong> ตามรูปแบบ
-                      <code>SatFinder_จังหวัด_ชื่อย่อโรงเรียน</code>
-                    </li>
-                    <li>ตรวจสอบผลการค้นหา แล้วเลือก Station ของโรงเรียนที่ต้องการ</li>
-                  </ol>
-                  <p class="mb-0 small text-light-subtle">
-                    ตัวอย่างคำค้น: <code>SatFinder_ปทุมธานี_TUS</code>
+                <div class="instruction-card mt-2 mb-2">
+                  <p class="mb-0">
+                    ตัวอย่างการค้นหา: <code>SatFinder_ปทุมธานี_TUS</code>
                   </p>
                 </div>
-
-                <div class="screenshot-placeholder">
-                  พื้นที่วางภาพ: หน้าเมนู Station จาก Hamburger Icon + ช่อง Find Station
-                </div>
+                <div class="screenshot-placeholder">พื้นที่วางภาพ: เมนู Station + ช่อง Find Station (ตามภาพตัวอย่างที่ได้รับ)</div>
               </div>
             </div>
           </div>
@@ -137,17 +213,17 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sec3" aria-expanded="false" aria-controls="sec3">
-                ส่วนที่ 3: การติดตามดาวเทียมและข้อมูลสัญญาณที่รับได้
+                ส่วนที่ 3: การติดตาม pass และวิเคราะห์ packets/telemetry
               </button>
             </h2>
             <div id="sec3" class="accordion-collapse collapse" data-bs-parent="#manualSections">
               <div class="accordion-body">
                 <ul>
-                  <li>ดูรายการดาวเทียมที่สนใจและช่วงเวลาที่คาดว่าจะรับสัญญาณได้</li>
-                  <li>อธิบายข้อมูลการรับสัญญาณ (เช่น packet, timestamp, frequency)</li>
-                  <li>ตัวอย่างคำถามชวนคิดให้นักเรียนวิเคราะห์ข้อมูลจริง</li>
+                  <li>อ่านช่วงเวลาที่ดาวเทียมผ่านและโอกาสรับสัญญาณ</li>
+                  <li>ตีความข้อมูล timestamp, packet และค่าเชิงคุณภาพสัญญาณ</li>
+                  <li>ตั้งคำถามให้นักเรียนวิเคราะห์จากข้อมูลจริง</li>
                 </ul>
-                <div class="screenshot-placeholder">พื้นที่วางภาพ: หน้า Satellite Passes / Packets Received</div>
+                <div class="screenshot-placeholder">พื้นที่วางภาพ: หน้า Passes / Telemetry / Packets</div>
               </div>
             </div>
           </div>
@@ -155,30 +231,20 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sec4" aria-expanded="false" aria-controls="sec4">
-                ส่วนที่ 4: แนวทางจัดกิจกรรมในห้องเรียน
+                ส่วนที่ 4: ตัวอย่างกิจกรรมในชั้นเรียนและการขยายผล
               </button>
             </h2>
             <div id="sec4" class="accordion-collapse collapse" data-bs-parent="#manualSections">
               <div class="accordion-body">
                 <ul>
-                  <li>ตัวอย่างกิจกรรม 15–30 นาทีที่ทำได้ทันที</li>
-                  <li>ใบงานสั้น ๆ เพื่อฝึกอ่านค่าจาก Dashboard</li>
-                  <li>เชื่อมโยงบทเรียนกับหลักการโทรคมนาคมและอวกาศ</li>
+                  <li>กิจกรรม 15–30 นาทีแบบพร้อมใช้ในห้องเรียน</li>
+                  <li>ใบงานฝึก data literacy และการสื่อสารผลวิเคราะห์</li>
+                  <li>แนวทางต่อยอดเป็นโครงงาน STEM ของโรงเรียน</li>
                 </ul>
-                <div class="screenshot-placeholder">พื้นที่วางภาพ: ตัวอย่างกิจกรรม / ใบงานประกอบ</div>
+                <div class="screenshot-placeholder">พื้นที่วางภาพ: ตัวอย่างใบงาน/กิจกรรมจากหน้าจอจริง</div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="container section-spacing">
-        <div class="cta-card">
-          <h2 class="h4 mb-3">หมายเหตุการเตรียมภาพประกอบ</h2>
-          <p class="mb-0">
-            เมื่อได้รับไฟล์ภาพ Print Screen หน้าจอ TinyGS เพิ่มเติม สามารถแทนที่กล่อง “พื้นที่วางภาพ” ในแต่ละส่วนได้ทันที
-            เพื่อให้คู่มือพร้อมเผยแพร่บน GitHub Pages อย่างเป็นทางการ
-          </p>
         </div>
       </section>
     </main>
