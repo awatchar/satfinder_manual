@@ -141,6 +141,10 @@ body::after {
   gap: 0.9rem;
 }
 .card { padding: 1rem; }
+.sf-card {
+  margin: 0.8rem 0 1rem;
+  background: var(--surface2);
+}
 .card h3 { margin-top: 0; }
 .card p { color: var(--muted); }
 .card-3 { grid-column: span 6; }
