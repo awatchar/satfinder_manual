@@ -26,7 +26,7 @@
       <div class="breadcrumb"><a href="/satfinder_manual/">หน้าแรก</a> / <a href="/satfinder_manual/tinygs/index.html">TinyGS</a> / 01 TinyGS คืออะไร</div>
       <section class="section-box">
         <h1>01) TinyGS คืออะไร และใช้ทำอะไรในงานการเรียนการสอน</h1>
-        <p>TinyGS เป็นแพลตฟอร์มโอเพ่นซอร์สและชุมชนผู้ใช้งานทั่วโลกที่สนับสนุนการรับสัญญาณดาวเทียมขนาดเล็ก (เช่น CubeSat) ผ่านเครือข่าย Ground Station ต้นทุนต่ำ โดย Dashboard ทำหน้าที่เป็นศูนย์กลางในการดู telemetry, packets และเหตุการณ์การผ่านของดาวเทียม</p>
+        <p>TinyGS เป็นแพลตฟอร์มโอเพ่นซอร์สและชุมชนทั่วโลกที่ช่วยรับสัญญาณดาวเทียมขนาดเล็ก (เช่น CubeSat) ผ่านเครือข่ายสถานีภาคพื้นต้นทุนต่ำ โดย Dashboard ใช้ดู telemetry, packets และช่วงเวลาที่ดาวเทียมผ่าน</p>
 
         <h2>ภาพรวม: หน้าเริ่มต้นของ TinyGS (Landing Page)</h2>
         <p>ก่อนที่ครูและนักเรียนจะเข้าไปใช้งาน Dashboard ของ TinyGS โดยละเอียด หน้า Landing Page ของ <span class="mono">www.tinygs.com</span> คือจุดเริ่มต้นสำคัญที่ช่วยให้เห็นภาพรวมของแพลตฟอร์ม ว่า TinyGS เป็นเครือข่ายสถานีภาคพื้นแบบชุมชนที่ร่วมกันรับข้อมูลจากดาวเทียมขนาดเล็กจากหลายพื้นที่ทั่วโลก</p>
@@ -51,14 +51,36 @@
           <p>หน้าตา UI ของเว็บไซต์อาจมีการเปลี่ยนแปลงตามเวลา ครูควรเน้นการสอนที่ “แนวคิดและคำศัพท์หลัก” มากกว่าการยึดตำแหน่งปุ่มหรือหน้าจอแบบตายตัว</p>
         </div>
 
+        <h2>คำศัพท์สำคัญ (Glossary)</h2>
+        <dl>
+          <dt><strong>Ground Station (สถานีภาคพื้น)</strong></dt>
+          <dd>อุปกรณ์และจุดรับสัญญาณจากดาวเทียมบนพื้นโลก ที่เชื่อมข้อมูลเข้าสู่ระบบ TinyGS</dd>
+
+          <dt><strong>Pass (ช่วงที่ดาวเทียมผ่าน)</strong></dt>
+          <dd>ช่วงเวลาที่ดาวเทียมอยู่ในตำแหน่งที่สถานีภาคพื้นมีโอกาสรับสัญญาณได้</dd>
+
+          <dt><strong>Elevation (มุมเงย)</strong></dt>
+          <dd>มุมของดาวเทียมเมื่อเทียบกับขอบฟ้า ยิ่งมุมสูงโดยทั่วไปยิ่งรับสัญญาณได้ง่ายขึ้น</dd>
+
+          <dt><strong>RSSI</strong></dt>
+          <dd>ค่าความแรงสัญญาณที่รับได้ มักเป็นค่าติดลบและใช้เปรียบเทียบความแรงระหว่างแพ็กเก็ต</dd>
+
+          <dt><strong>SNR</strong></dt>
+          <dd>อัตราส่วนสัญญาณต่อสัญญาณรบกวน ใช้ประเมินความชัดของสัญญาณก่อนการถอดรหัสข้อมูล</dd>
+
+          <dt><strong>Telemetry</strong></dt>
+          <dd>ข้อมูลสถานะจากดาวเทียม เช่นพลังงาน อุณหภูมิ และค่าระบบย่อย ที่ส่งลงมาให้วิเคราะห์</dd>
+        </dl>
+
+
         <h2>การใช้ TinyGS ในการเรียนการสอน</h2>
         <div class="grid">
-          <div class="card card-3"><h3>Observation</h3><p>สังเกตว่าดาวเทียมส่งข้อมูลอย่างไร และข้อมูลปรากฏบน Dashboard แบบใด</p></div>
-          <div class="card card-3"><h3>Data Interpretation</h3><p>อ่านรูปแบบข้อมูลจริง เช่น เวลา pass, ความถี่การรับแพ็กเก็ต, ความแตกต่างของสถานี</p></div>
-          <div class="card card-3"><h3>Experiment Design</h3><p>ตั้งสมมติฐานและตรวจสอบจากข้อมูลจริง เช่น max elevation มีผลต่อการรับสัญญาณหรือไม่</p></div>
+          <div class="card card-3"><h3>การสังเกต (Observation)</h3><p>สังเกตว่าดาวเทียมส่งข้อมูลอย่างไร และข้อมูลปรากฏบน Dashboard แบบใด</p></div>
+          <div class="card card-3"><h3>การตีความข้อมูล (Data Interpretation)</h3><p>อ่านข้อมูลจริง เช่น เวลา pass, ความถี่การรับแพ็กเก็ต และความแตกต่างของสถานี</p></div>
+          <div class="card card-3"><h3>การออกแบบกิจกรรม/การทดลอง (Experiment Design)</h3><p>ตั้งสมมติฐานและตรวจสอบด้วยข้อมูลจริง เช่นมุมเงยสูงสุดมีผลต่อการรับสัญญาณหรือไม่</p></div>
         </div>
 
-        <h2>Learning Objectives</h2>
+        <h2>เป้าหมายการเรียนรู้ (Learning Objectives)</h2>
         <ul>
           <li>อธิบายบทบาทของ TinyGS Dashboard ในเครือข่ายสถานีภาคพื้นได้</li>
           <li>เชื่อมโยงข้อมูล telemetry กับแนวคิดโทรคมนาคมพื้นฐานได้</li>
@@ -71,19 +93,11 @@
           <strong>ประโยคเริ่มคาบที่แนะนำ</strong>
           <div>“วันนี้เราจะใช้ข้อมูลจริงจากดาวเทียมเพื่อฝึกคิดแบบวิศวกร: เห็นข้อมูล ตั้งคำถาม แล้วหาคำอธิบายร่วมกัน”</div>
         </div>
-
-        <figure class="figure">
-          <div class="img-placeholder" role="img" aria-label="ภาพประกอบ: ภาพรวม TinyGS และข้อมูลที่รับได้ (จะเพิ่มภายหลัง)">
-            <div class="img-placeholder__title">SCREENSHOT PLACEHOLDER</div>
-            <div class="img-placeholder__desc">ภาพรวม Dashboard: satellites, packets, telemetry</div>
-          </div>
-          <figcaption>ภาพประกอบ: ภาพรวม TinyGS และข้อมูลที่รับได้ (จะเพิ่มภายหลัง)</figcaption>
-        </figure>
       </section>
 
       <div class="bottom-nav">
-        <span></span>
-        <a class="btn primary" href="/satfinder_manual/tinygs/02-access-login.html">ถัดไป: 02 Access/Login →</a>
+        <a class="btn" href="/satfinder_manual/tinygs/04-station-status-live-tracking.html">ข้ามไปใช้งานจริง: บทที่ 4 สถานะสถานีและ Live Tracking</a>
+        <a class="btn primary" href="/satfinder_manual/tinygs/02-access-login.html">ถัดไป: บทที่ 2 การเข้าหน้าเว็บไซต์และลงชื่อเข้าใช้</a>
       </div>
     </main>
 
