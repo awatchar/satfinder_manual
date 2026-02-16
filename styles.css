@@ -119,6 +119,14 @@ body::after {
 .hero h1 { margin: 0 0 0.45rem; font-size: clamp(1.5rem, 2.5vw, 2.2rem); }
 .hero p { margin: 0; color: var(--muted); }
 
+.sf-logo {
+  display: block;
+  margin: 1rem auto 1rem;
+  width: min(420px, 70vw);
+  max-width: 420px;
+  height: auto;
+}
+
 .cta-row { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.6rem; }
 .btn {
   display: inline-block;

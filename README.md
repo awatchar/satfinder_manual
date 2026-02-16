@@ -1,5 +1,9 @@
 # SatFinder Manual
 
+<p align="center">
+  <img src="images/SatFinder Telecom School.svg" alt="SatFinder Manual — โครงการส่งเสริมการเรียนรู้ทางด้านโทรคมนาคมในโรงเรียนทั่วประเทศ" width="360">
+</p>
+
 เว็บไซต์คู่มือ **SatFinder Manual** จัดทำขึ้นเพื่อเป็นเอกสารสำหรับครูผู้สอนในการใช้งาน TinyGS Dashboard และการเรียนรู้ด้านโทรคมนาคมผ่านดาวเทียมสำหรับโรงเรียนทั่วประเทศ ภายใต้โครงการ SatFinder
 
 ## ผู้จัดทำ
