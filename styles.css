@@ -152,8 +152,14 @@ body::after {
 .callout { margin: 1rem 0; padding: 0.85rem 0.95rem; background: var(--surface2); }
 .callout .label { font-size: 0.82rem; letter-spacing: 0.2px; font-weight: 700; margin-bottom: 0.3rem; }
 .callout.note { border-left: 4px solid var(--accent); }
+.callout.tip { border-left: 4px solid var(--accent); }
 .callout.caution { border-left: 4px solid var(--warn); }
 .callout.teacher { border-left: 4px solid var(--accent2); }
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.95em;
+}
 
 .breadcrumb { font-size: 0.9rem; color: var(--muted); margin: 1rem 0 0.5rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
@@ -187,6 +193,20 @@ body::after {
 }
 
 .figure { margin: 1rem 0; }
+.sf-figure {
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  background: var(--surface2);
+  padding: 0.8rem;
+}
+.sf-figure img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.55rem;
+  border: 1px solid var(--border);
+}
 .img-placeholder {
   aspect-ratio: 16 / 9;
   border-radius: 0.8rem;
