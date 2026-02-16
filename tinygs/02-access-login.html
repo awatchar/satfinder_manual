@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SatFinder Manual | โครงการส่งเสริมการเรียนรู้ทางด้านโทรคมนาคมในโรงเรียนทั่วประเทศ</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a class="brand" href="/satfinder_manual/"><strong>SatFinder Manual</strong><span>โครงการส่งเสริมการเรียนรู้ทางด้านโทรคมนาคมในโรงเรียนทั่วประเทศ</span></a>
+        <nav>
+          <input id="menu-toggle" class="nav-toggle" type="checkbox" />
+          <label class="nav-toggle-label" for="menu-toggle">☰ เมนู</label>
+          <div class="nav-links">
+            <a href="/satfinder_manual/">หน้าแรก</a>
+            <a class="active" href="/satfinder_manual/tinygs/index.html">TinyGS</a>
+            <a href="https://github.com/awatchar/satfinder_manual" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="breadcrumb"><a href="/satfinder_manual/">หน้าแรก</a> / <a href="/satfinder_manual/tinygs/index.html">TinyGS</a> / 02 ขั้นตอนเข้าหน้าเว็บไซต์และลงชื่อเข้าใช้</div>
+      <section class="section-box">
+        <h1>02) ขั้นตอนเข้าหน้าเว็บไซต์และลงชื่อเข้าใช้</h1>
+
+        <div class="card sf-card">
+          <h2>สรุปบทนี้</h2>
+          <p>บทนี้อธิบายการเข้าสู่ระบบ (Login) ของ TinyGS และข้อควรพิจารณาก่อนใช้งานจริง ในหลายกรณีครูสามารถเข้าดู Dashboard เพื่อวิเคราะห์ข้อมูลได้โดยไม่ต้องล็อกอิน</p>
+        </div>
+
+        <div class="callout caution">
+          <div class="label">⚠️ CAUTION</div>
+          <strong>การ Login นี้เหมาะสำหรับนักเรียนระดับ Advance เท่านั้น</strong>
+          <ul>
+            <li>ครูต้องเป็นผู้ส่ง URL สำหรับเข้าสู่ระบบให้ผู้เรียน โดย URL นี้ได้จาก Telegram Bot ตอนสร้าง/ตั้งค่า TinyGS Station</li>
+            <li>หากไม่จำเป็น แนะนำให้ข้ามขั้นตอน Login และใช้การดูข้อมูลแบบไม่ล็อกอินแทน</li>
+            <li>ข้อควรระวัง: อย่าเผยแพร่ URL สำหรับเข้าสู่ระบบต่อสาธารณะ</li>
+          </ul>
+        </div>
+
+        <figure class="figure sf-figure">
+          <img src="images/02-Login%20Page.png" alt="หน้าต่าง Request Weblogin (Login) ของ TinyGS บนเว็บไซต์ www.tinygs.com" loading="lazy" />
+          <figcaption>ภาพที่ 1 หน้า Log in (Request Weblogin) ของ TinyGS บนเว็บไซต์ www.tinygs.com</figcaption>
+        </figure>
+
+        <h2>ขั้นตอนแนะนำ</h2>
+        <ol class="steps">
+          <li>เปิดเว็บเบราว์เซอร์ (Chrome/Edge/Firefox รุ่นปัจจุบัน)</li>
+          <li>เข้าสู่หน้า TinyGS Dashboard</li>
+          <li>ตรวจสอบองค์ประกอบหลัก: เมนู, มุมมองข้อมูล, พื้นที่ค้นหา</li>
+          <li>กรณีต้องใช้ฟังก์ชันเฉพาะ ให้เลือก Sign in / Login / Account</li>
+          <li>ยืนยันว่าเข้าสู่ระบบสำเร็จจากสถานะบัญชีบนหน้าจอ</li>
+        </ol>
+
+        <h2>ผลลัพธ์ที่คาดหวัง</h2>
+        <ul>
+          <li>ครูสามารถเปิดหน้า Dashboard ได้และเริ่มสำรวจข้อมูลได้ทันที</li>
+          <li>ครูแยกได้ว่าเมื่อไรควรใช้ Public View และเมื่อไรควร Login</li>
+        </ul>
+      </section>
+
+      <div class="bottom-nav">
+        <a class="btn" href="/satfinder_manual/tinygs/01-intro.html">← ย้อนกลับ 01 Intro</a>
+        <a class="btn primary" href="/satfinder_manual/tinygs/03-main-menus.html">ถัดไป: 03 Main Menus →</a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>โครงการส่งเสริมการเรียนรู้ทางด้านโทรคมนาคมในโรงเรียนทั่วประเทศ (SatFinder)</div>
+        <div>คณะวิศวกรรมศาสตร์ มหาวิทยาลัยธรรมศาสตร์ และ สถาบันวิจัยและให้คำปรึกษาแห่งมหาวิทยาลัยธรรมศาสตร์</div>
+        <div>สนับสนุนโดย กองทุนวิจัยและพัฒนากิจการกระจายเสียง กิจการโทรทัศน์ และกิจการโทรคมนาคม เพื่อประโยชน์สาธารณะ</div>
+      </div>
+    </footer>
+  </body>
+</html>
